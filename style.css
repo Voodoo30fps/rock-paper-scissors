@@ -321,6 +321,7 @@ header .score > div.counter {
 
 .play-menu-wrapper .result {
   display: flex;
+  flex-basis: 100%;
   flex-direction: column;
   margin: auto;
 
@@ -402,3 +403,62 @@ header .score > div.counter {
   }
 }
 /* END RULES BUTTON */
+
+.rules-modal {
+  position: absolute;
+  inset: 0;
+
+  display: flex;
+  flex-direction: column;
+
+  background-color: #FFFFFF;
+  padding: calc(2 * var(--scale));
+}
+
+.rules-modal h2 {
+  font-size: calc(2.5 * var(--scale));
+  color: #000000;
+  text-transform: uppercase;
+  margin: 0;
+
+  text-align: center;
+  margin: 10vh 0;
+}
+
+.rules-modal img {
+  margin: calc(2.5 * var(--scale));
+}
+
+.rules-modal span.close {
+  position: absolute;
+  bottom: 5vh;
+  left: calc(50% - 10px);
+
+  height: 20px;
+  width: 20px;
+  background-image: url(images/icon-close.svg);
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 768px) {
+  .rules-modal {
+    max-width: 400px;
+    max-height: 415px;
+    border-radius: calc(.5 * var(--scale));
+
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+
+  .rules-modal h2 {
+    margin: 0;
+    text-align: left;
+  }
+
+  .rules-modal span.close {
+    left: auto;
+    top: calc(2 * var(--scale));
+    right: calc(2 * var(--scale));
+}
