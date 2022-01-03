@@ -7,14 +7,14 @@ Next steps:
 
 
 Technical stuff I used for this project:
--> html + css
+- -> html + css
 	- mobile first design
 	- flex containers (justifi-content, flex-basis, flex-direction, )
 	- text selection prevention
 	- css variables, calculations, clamp, 
 	- css inset box shadows
 
--> javascript
+- -> javascript
 	- modal toggler
 	- DOM elements manipulation
 	- querySelector, classList updates (toggler, add, remove), array forEach loop
