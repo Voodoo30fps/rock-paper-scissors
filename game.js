@@ -1,7 +1,9 @@
 let selectionMenu = document.querySelector('.selection-menu');
 let playMenu = document.querySelector('.play-menu-wrapper');
 
-let score = 0;
+let score = localStorage.hasOwnProperty('storedScore') ? localStorage.getItem("storedScore") : 0;
+document.querySelector('.score .counter').innerHTML = score;
+
 let options = document.querySelectorAll('.selection-menu .icon');
 
 let optionsClass = ["paper", "scissors", "rock"];
@@ -57,6 +59,8 @@ options.forEach((optionButton, index) => {
   				setTimeout(function() {
 	  				document.querySelector('.' + decider(playerOption, houseOption)).classList.remove("hidden");
 	  				document.querySelector('.score .counter').innerHTML = score;
+	  				localStorage.setItem('storedScore', score);
+	  				console.log('localStorage.getItem("storedScore")' + localStorage.getItem("storedScore"));
 
 	  				setTimeout(function() {
 	  					playAgain.classList.remove('hidden');
