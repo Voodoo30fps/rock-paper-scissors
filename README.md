@@ -7,15 +7,14 @@ Next steps:
 
 
 Technical stuff I used for this project:
-- -> html + css
-	- mobile first design
-	- flex containers (justifi-content, flex-basis, flex-direction, )
-	- text selection prevention
-	- css variables, calculations, clamp, 
-	- css inset box shadows
-
-- -> javascript
-	- modal toggler
-	- DOM elements manipulation
-	- querySelector, classList updates (toggler, add, remove), array forEach loop
-	- localStorage (getItem, getItem, hasOwnProperty)
+- html + css
+  - mobile first design
+  - flex containers (justifi-content, flex-basis, flex-direction, )
+  - text selection prevention
+  - css variables, calculations, clamp, 
+  - css inset box shadows
+- javascript
+  - modal toggler
+  - DOM elements manipulation
+  - querySelector, classList updates (toggler, add, remove), array forEach loop
+  - localStorage (getItem, getItem, hasOwnProperty)
