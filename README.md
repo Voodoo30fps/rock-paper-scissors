@@ -1,3 +1,7 @@
+## Frontend Mentor - Rock Paper Scissors
+
+---
+
 Next steps:
 - Fix the content jump when the 'Play again' button appears
 - Add transitions and animations
